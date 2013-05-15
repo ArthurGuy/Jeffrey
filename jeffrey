@@ -1,0 +1,89 @@
+#!/usr/bin/env php
+<?php
+ini_set("memory_limit", "512M");
+
+/*
+|--------------------------------------------------------------------------
+| Register The Auto Loader
+|--------------------------------------------------------------------------
+|
+| Composer provides a convenient, automatically generated class loader
+| for our application. We just need to utilize it! We'll require it
+| into the script here so that we do not have to worry about the
+| loading of any our classes "manually". Feels great to relax.
+|
+*/
+
+require __DIR__.'/vendor/autoload.php';
+
+
+/*
+|--------------------------------------------------------------------------
+| Setup the environment
+|--------------------------------------------------------------------------
+|
+| This is everything CodeIgniter would have done for us
+|
+*/
+
+//Setup the DB
+$db_config = array(
+    'driver'    => 'mysql',
+    'host'      => 'localhost',
+    'database'  => 'data_insidebuzz',
+    'username'  => 'root',
+    'password'  => 'root',
+    'collation' => 'utf8_unicode_ci',
+    'charset'   => 'utf8',
+    'prefix'    => 'insidebuzz_',
+);
+
+
+//Create an eloquent connection and load it into the capsule container for use elsewhere
+Capsule\Database\Connection::make('main', $db_config, true);
+
+
+//Set the default timezine
+if(ini_get('date.timezone') == '') {
+    date_default_timezone_set('GMT');
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Load The Console Application
+|--------------------------------------------------------------------------
+|
+| We'll need to run the script to load and return the Artisan console
+| application. We keep this in its own script so that we will load
+| the console application independent of running commands which
+| will allow us to fire commands from Routes when we want to.
+|
+*/
+
+$jeffrey = new App\Console\Application('Jeffrey', '0.1');
+
+
+/*
+|--------------------------------------------------------------------------
+| Register the commands
+|--------------------------------------------------------------------------
+*/
+
+$jeffrey->add(new App\Commands\Example());
+
+
+/*
+|--------------------------------------------------------------------------
+| Run The Console Application
+|--------------------------------------------------------------------------
+|
+| When we run the console application, the current CLI command will be
+| executed in this console and the response sent back to a terminal
+| or another output device for the developers. Here goes nothing!
+|
+*/
+
+$status = $jeffrey->run();
+
+exit($status);

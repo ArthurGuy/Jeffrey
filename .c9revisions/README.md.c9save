@@ -1,0 +1,15 @@
+{"ts":1368644233497,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"Jeffrey\n=======\n\nLaravel's artisan for codeigniter\n"]],"start1":0,"start2":0,"length1":0,"length2":51}]],"length":51}
+{"contributors":[],"silentsave":true,"ts":1368644197441,"patch":[[{"diffs":[[0,"======\n\n"],[1,"An attempt"],[0,"Laravel'"]],"start1":9,"start2":9,"length1":16,"length2":26}]],"length":61,"saved":false}
+{"ts":1368644198375,"patch":[[{"diffs":[[0," attempt"],[1," at "],[0,"Laravel'"]],"start1":19,"start2":19,"length1":16,"length2":20}]],"length":65,"saved":false}
+{"ts":1368644201071,"patch":[[{"diffs":[[0,"empt at "],[1,"creating "],[0,"Laravel'"]],"start1":23,"start2":23,"length1":16,"length2":25}]],"length":74,"saved":false}
+{"ts":1368644205305,"patch":[[{"diffs":[[0,"reating "],[1,"a "],[0,"Laravel'"]],"start1":32,"start2":32,"length1":16,"length2":18}]],"length":76,"saved":false}
+{"ts":1368644230288,"patch":[[{"diffs":[[0,"avel"],[-1,"'s"],[0," art"]],"start1":45,"start2":45,"length1":10,"length2":8}]],"length":74,"saved":false}
+{"ts":1368644233317,"patch":[[{"diffs":[[0,"artisan "],[1,"like servi"],[0,"for code"]],"start1":50,"start2":50,"length1":16,"length2":26}]],"length":84,"saved":false}
+{"ts":1368644235504,"patch":[[{"diffs":[[0,"ke servi"],[1,"ce "],[0,"for code"]],"start1":60,"start2":60,"length1":16,"length2":19}]],"length":87,"saved":false}
+{"ts":1368644238845,"patch":[[{"diffs":[[0,"ice for "],[-1,"c"],[1,"C"],[0,"odeignit"]],"start1":67,"start2":67,"length1":17,"length2":17}]],"length":87,"saved":false}
+{"ts":1368644243222,"patch":[[{"diffs":[[0,"igniter\n"],[1,"\n\n"]],"start1":79,"start2":79,"length1":8,"length2":10}]],"length":89,"saved":false}
+{"ts":1368644256390,"patch":[[{"diffs":[[0,"gniter\n\n"],[1,"It can almost certinly be"],[0,"\n"]],"start1":80,"start2":80,"length1":9,"length2":34}]],"length":114,"saved":false}
+{"ts":1368644259632,"patch":[[{"diffs":[[0,"tinly be"],[1," improved but "],[0,"\n"]],"start1":105,"start2":105,"length1":9,"length2":23}]],"length":128,"saved":false}
+{"ts":1368644265287,"patch":[[{"diffs":[[0,"ved "],[-1,"but"],[1,"and will require"],[0," \n"]],"start1":119,"start2":119,"length1":9,"length2":22}]],"length":141,"saved":false}
+{"ts":1368644269605,"patch":[[{"diffs":[[0,"require "],[1,"tweaks to work in your en"],[0,"\n"]],"start1":132,"start2":132,"length1":9,"length2":34}]],"length":166,"saved":false}
+{"ts":1368644275015,"patch":[[{"diffs":[[0," your en"],[1,"vironment but it works well."],[0,"\n"]],"start1":157,"start2":157,"length1":9,"length2":37}]],"length":194,"saved":false}
